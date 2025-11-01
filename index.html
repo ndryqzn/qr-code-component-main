@@ -3,26 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body class="bg-[hsl(212_45%_89%)] flex items-center justify-center flex-col min-h-screen font-[Outfit]">
+  <div class="bg-white flex flex-col items-center text-center p-4 w-xs rounded-xl shadow-xl [@media(max-width:320px)]:w-70">
+    <img src="images/image-qr-code.png" alt="qr" class="w-sm rounded-2xl mb-5">
+    <h1 class=" text-xl/6 mx-5 font-bold mb-3 text-[hsl(218_44%_22%)] [@media(max-width:320px)]:text-lg/5">Improve your front-end skills by building projects</h1>
+    <p class="text-sm mx-6 font-normal mb-5 text-[hsl(216_15%_48%)] [@media(max-width:320px)]:text-xs">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
   </div>
+
+
+  <footer class="absolute bottom-5 text-sm text-center [@media(max-width:320px)]:text-[10px]">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-[hsl(218_44%_22%)] font-semibold underline">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ndryqzn" target="_blank" class="text-[hsl(218_44%_22%)] font-semibold underline">Andrey Quizon</a>.
+  </footer>
 </body>
 </html>
